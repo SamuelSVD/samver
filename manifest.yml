@@ -1,0 +1,6 @@
+---
+applications:
+- name: samver
+  buildpacks:
+    - staticfile_buildpack
+  path: dist/samver

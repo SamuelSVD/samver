@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng lint
+  - ng build --prod --base-href https://samver.cfapps.io
+  - ng test --watch=false --browsers=ChromeHeadless
+
+deploy:
+   provider: cloudfoundry
+   username: sam.svd95@gmail.com
+   password: $PIVOTAL
+   api: https://api.run.pivotal.io
+   organization: samver
+   space: development
