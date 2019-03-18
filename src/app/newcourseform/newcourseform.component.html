@@ -1,0 +1,19 @@
+<p>Work with an array of objects in a form</p>
+<form action="" [formGroup]="form">
+  <label for="name">Course Name</label>
+  <input name="name" type="text" class="form-control" formControlName="name">
+  <div formGroupName="contact">
+    <label for="email">Email</label>
+    <input name="email" type="text" class="form-control" formControlName="email">
+    <label for="phone">Phone</label>
+    <input name="phone" type="text" class="form-control" formControlName="phone">
+  </div>
+
+  <label>Topics</label>
+  <input name="topics" type="text" class="form-control" (keyup.enter)="addTopic(topic)" #topic>
+  <ul class="list-group">
+    <li *ngFor="let topic of topics.controls" (click)="removeTopic(topic)" class="list-group-item">
+      {{ topic.value }}
+    </li>
+  </ul> 
+</form>

@@ -1,0 +1,8 @@
+<h2>{{ "Title: " + getTitle() }} </h2>
+<ul>
+  <li *ngFor="let course of courses">
+    {{ course }}
+  </li>
+</ul>
+<button class='btn' [class.btn-primary]='isActive' (click)='onSave($event)'>THis button</button>
+<input [(ngModel)]='email' (keyup.enter)='onEnter()' />
