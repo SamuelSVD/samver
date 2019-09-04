@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SvdHeaderComponent } from './svd-header/svd-header.component';
+import { SvdContentComponent } from './svd-content/svd-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SvdHeaderComponent,
+    SvdContentComponent
   ],
   imports: [
     BrowserModule,
