@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './svd.component.html',
+  styleUrls: ['./svd.component.css']
 })
-export class AppComponent {
+export class SvdComponent {
   title = 'samver';
 }

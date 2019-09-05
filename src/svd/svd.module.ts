@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { SvdRoutingModule } from './svd-routing.module';
+import { SvdComponent } from './svd.component';
 import { SvdHeaderComponent } from './svd-header/svd-header.component';
 import { SvdContentComponent } from './svd-content/svd-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    SvdComponent,
     SvdHeaderComponent,
     SvdContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    SvdRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [SvdComponent]
 })
-export class AppModule { }
+export class SvdModule { }
