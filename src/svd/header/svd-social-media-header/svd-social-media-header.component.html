@@ -1,0 +1,5 @@
+<ul class="nav navbar-nav ml-auto">
+  <li *ngFor='let socialMediaItem of socialMedia.list'>
+    <a href={{socialMediaItem.URL}} class='nav-link'><i class={{getSocialMediaClass(socialMediaItem.Name)}}></i></a>
+  </li>
+</ul>
