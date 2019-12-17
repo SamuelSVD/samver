@@ -1,5 +1,5 @@
 # samver
-samver.dev website
+samver.ca website
 
 ## Introduction
 
@@ -15,9 +15,9 @@ A few coding rules!
 
 ## Deployment!
 
-Because the site is hosted on Github Pages and linked to from the samver.dev website, I set up this repository to automatically use the contents of the ```docs``` folder as the contents of the website. As such, here are some steps:
+Because the site is hosted on Github Pages and linked to from the samver.ca website, I set up this repository to automatically use the contents of the ```docs``` folder as the contents of the website. As such, here are some steps:
 
 1. delete the ```dist``` folder if it exists on the root folder of this project
-2. execute the command ```ng build --prod --base-href https://samver.dev```
+2. execute the command ```ng build --prod --base-href https://samver.ca```
 3. copy the contents of the ```dist``` folder into the ```docs``` folder
 4. comment, commit, and push!
