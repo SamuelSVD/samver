@@ -12,7 +12,8 @@ import { SvdFooterComponent } from './footer/svd-footer/svd-footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'about-me', component: AboutMeComponent}
+  { path: '', component: SvdUnderConstructionComponent},
+  { path: 'about', component: AboutMeComponent}
 ]
 @NgModule({
   declarations: [
