@@ -2,7 +2,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { SvdRoutingModule } from './svd-routing.module';
 import { SvdComponent } from './svd.component';
 import { SvdHeaderComponent } from './header/svd-header/svd-header.component';
 import { SvdContentComponent } from './svd-content/svd-content.component';
@@ -12,7 +11,8 @@ import { SvdFooterComponent } from './footer/svd-footer/svd-footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: '', component: SvdUnderConstructionComponent},
+  { path: '', pathMatch: 'full', redirectTo: 'under-construction'},
+  { path: 'under-construction', component: SvdUnderConstructionComponent},
   { path: 'about', component: AboutMeComponent}
 ]
 @NgModule({
@@ -27,7 +27,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    SvdRoutingModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true}
