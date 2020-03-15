@@ -1,0 +1,96 @@
+.border-2px {
+    border: solid 1px;
+}
+.navbar-border {
+    background: #343a40;
+    color: #bfbfbf;
+}
+.navbar {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.navbar-dark {
+    background: #343a40;
+    color: #bfbfbf;
+}
+.navbar a {
+    color: #bfbfbf;
+}
+.navbar a:link, a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover, a:active {
+    color: #cfcfcf;
+    background: #444a50;
+}
+.navbar-flex {
+    display: flex;
+    border-color: blue;
+}
+
+.navbar-flex-right {
+    display: flex;
+    width: 100%;
+    border-color: green;
+    flex-flow: row-reverse wrap;
+}
+
+.navbar-main {
+    font-weight: bold;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar [type="checkbox"] {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .navbar label {
+        background: #222;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .navbar label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+    }
+    .navbar-flex-right {
+        border-color: purple;
+    }
+    [type="checkbox"]:checked ~ .navbar-collapsible {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        top: 48px;
+        left:10%;
+        width: 80%;
+    }
+    .navbar-collapsible {
+        display: none;
+    }
+    .navbar-collapsible ul {
+        flex-direction: column;
+    }
+    .navbar-collapsible ul > li{
+        width:100%;
+    }
+    .navbar-collapsible ul > li > a{
+        padding-left:10%;
+        width:80%;
+        padding-right:10%;
+    }
+}

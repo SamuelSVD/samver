@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvdHeaderComponent implements OnInit {
 
+  private showMenu: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  closeMenu() {
+    this.showMenu=false;
   }
 
 }

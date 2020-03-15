@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~font-awesome/css/font-awesome.css';
 
+body {
+    margin: 0px;
+}
 .svd-content-container {
     padding-top: 5vh;
     padding-left: 5vw;
@@ -10,4 +12,9 @@
 
 .align-center {
     text-align: center;
+}
+
+.align-middle {
+    display: inline-block;
+    vertical-align: middle;
 }

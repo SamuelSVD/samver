@@ -1,22 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" routerLink="/">samver</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="">Home</a>
-      </li>
-      <li class="nav-item active">
-        <a routerLink="/about" class="nav-link">About</a>
-      </li>
-      <li class="nav-item active">
-        <a routerLink="/TrayDir" class="nav-link">TrayDir</a>
-      </li>
-    </ul>
-    <svd-social-media-header></svd-social-media-header>
+<div class="navbar-border">
+  <div class='navbar navbar-flex navbar-dark border-2px'>
+    <a routerLink="/" class='navbar-main'>samver</a>
+    <div class="navbar-flex-right navbar-dark">
+      <input type="checkbox" id="nav" [checked]="showMenu" (change)="showMenu = !showMenu"/><label for="nav"></label>
+      <div class="navbar-collapsible navbar-flex-right navbar-dark border-2px">
+        <ul>
+          <a routerLink="/" (click)='closeMenu()'><li>Home</li></a>
+          <a routerLink="/about" (click)='closeMenu()'><li>About</li></a>
+          <a routerLink="/TrayDir" (click)='closeMenu()'><li>TrayDir</li></a>
+        </ul>
+      </div>
+    </div>
   </div>
-</nav>
+</div>
