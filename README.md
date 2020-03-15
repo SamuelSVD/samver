@@ -22,4 +22,4 @@ Because the site is hosted on Github Pages and linked to from the samver.ca webs
 3. copy the contents of the ```dist``` folder into the ```docs``` folder
 4. comment, commit, and push!
 
-Note: Do not telede the ```CNAME``` file inside of the ```docs``` folder
+Note: Do not delete the ```CNAME``` file inside of the ```docs``` folder
