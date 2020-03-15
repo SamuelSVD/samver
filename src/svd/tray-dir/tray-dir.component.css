@@ -1,0 +1,9 @@
+.download-group {
+    display:flex;
+    border-radius: 15px;
+    border: 2px solid #afafaf;
+    padding: 20px; 
+    background: #dfdfdf;
+    width: 100%;
+    height: 100px;
+}
