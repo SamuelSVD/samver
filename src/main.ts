@@ -10,3 +10,4 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(SvdModule)
   .catch(err => console.error(err));
+
