@@ -13,8 +13,17 @@ body {
 .align-center {
     text-align: center;
 }
-
 .align-middle {
     display: inline-block;
     vertical-align: middle;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.theme-color-box {
+    background: #343a40;
+    color: #bfbfbf;
 }

@@ -2,17 +2,13 @@
     border: solid 1px;
 }
 .navbar-border {
-    background: #343a40;
-    color: #bfbfbf;
+    width:100%;
 }
 .navbar {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-}
-.navbar-dark {
-    background: #343a40;
-    color: #bfbfbf;
+    min-height: 49px;
 }
 .navbar a {
     color: #bfbfbf;
@@ -31,10 +27,13 @@
     display: flex;
     border-color: blue;
 }
+.navbar-block {
+    display: block;
+    border-color: blue;
+}
 
 .navbar-flex-right {
     display: flex;
-    width: 100%;
     border-color: green;
     flex-flow: row-reverse wrap;
 }
@@ -55,35 +54,40 @@ label {
     display: none;
 }
 @media screen and (max-width: 768px) {
+    .navbar-main {
+        margin-right: -100px;
+    }
     .navbar label {
-        display: flex;
+        display: block;
         padding: 15px 20px;
         cursor: pointer;
-        border-color: #bfbfbf;
-        vertical-align: middle;
+    }
+    .navbar label:hover {
+        background: #444a50;
     }
     .navbar-flex-right {
         border-color: purple;
     }
-    [type="checkbox"]:checked ~ .navbar-collapsible {
-        display: block;
+    [type="checkbox"]:checked ~ .navbar-collapsible > ul {
+        display: flex;
         z-index: 9999;
         position: absolute;
         top: 48px;
         left:10%;
         width: 80%;
+        vertical-align: middle;
     }
     [type="checkbox"]:checked ~ label {
         background: #ababab;
         color: white;
     }
-    .navbar-collapsible {
+    .navbar-collapsible > ul {
         display: none;
     }
-    .navbar-collapsible ul {
+    .navbar-collapsible > ul {
         flex-direction: column;
     }
-    .navbar-collapsible ul > li{
+    .navbar-collapsible > ul > li{
         width:100%;
     }
     .navbar-collapsible ul > li > a{
