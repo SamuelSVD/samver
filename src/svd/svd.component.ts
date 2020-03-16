@@ -10,6 +10,7 @@ export class SvdComponent {
   constructor(public _router:Router) {
     console.log('Start');
     console.log(window.location.pathname);
+    console.log(sessionStorage.redirect);
     console.log('Continue');
     this._router.navigate([window.location.pathname]);
   }
