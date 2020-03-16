@@ -1,13 +1,22 @@
 <div class="navbar-border">
-  <div class='navbar navbar-flex navbar-dark border-2px'>
+  <div class='navbar navbar-flex navbar-dark'>
     <a routerLink="/" class='navbar-main'>samver</a>
     <div class="navbar-flex-right navbar-dark">
-      <input type="checkbox" id="nav" [checked]="showMenu" (change)="showMenu = !showMenu"/><label for="nav"></label>
-      <div class="navbar-collapsible navbar-flex-right navbar-dark border-2px">
+      <input type="checkbox" id="nav" [checked]="showMenu" (change)="showMenu = !showMenu" />
+      <label for="nav">
+        <i class="icon fa fa-lg fa-bars"></i>
+      </label>
+      <div class="navbar-collapsible navbar-flex navbar-dark">
         <ul>
-          <a routerLink="/" (click)='closeMenu()'><li>Home</li></a>
-          <a routerLink="/about" (click)='closeMenu()'><li>About</li></a>
-          <a routerLink="/TrayDir" (click)='closeMenu()'><li>TrayDir</li></a>
+          <a routerLink="/" (click)='closeMenu()'>
+            <li>Home</li>
+          </a>
+          <a routerLink="/about" (click)='closeMenu()'>
+            <li>About</li>
+          </a>
+          <a routerLink="/TrayDir" (click)='closeMenu()'>
+            <li>TrayDir</li>
+          </a>
         </ul>
       </div>
     </div>

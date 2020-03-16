@@ -51,22 +51,16 @@
 .navbar [type="checkbox"] {
     display: none;
 }
+label {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .navbar label {
-        background: #222;
-        border-radius: 10px;
-        width: 40px;
-        height: 40px;
+        display: flex;
+        padding: 15px 20px;
         cursor: pointer;
-    }
-    .navbar label:after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 5px;
-        background: #777;
-        margin: 7px 5px;
-        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+        border-color: #bfbfbf;
+        vertical-align: middle;
     }
     .navbar-flex-right {
         border-color: purple;
@@ -78,6 +72,10 @@
         top: 48px;
         left:10%;
         width: 80%;
+    }
+    [type="checkbox"]:checked ~ label {
+        background: #ababab;
+        color: white;
     }
     .navbar-collapsible {
         display: none;
