@@ -57,6 +57,9 @@ label {
     .navbar-main {
         margin-right: -100px;
     }
+    .navbar-hide {
+        display: none;
+    }
     .navbar label {
         display: block;
         padding: 15px 20px;

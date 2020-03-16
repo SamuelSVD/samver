@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvdHeaderComponent implements OnInit {
 
-  private showMenu: boolean = false;
+  public showMenu: boolean = false;
 
   constructor() { }
 

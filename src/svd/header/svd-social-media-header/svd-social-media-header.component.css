@@ -1,0 +1,29 @@
+div {
+    display: flex;
+    min-height: 49px;
+}
+a {
+    color: #bfbfbf;
+}
+a:link, a:visited {
+    padding: 14px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #cfcfcf;
+    background: #444a50;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
