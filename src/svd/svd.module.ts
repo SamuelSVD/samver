@@ -11,6 +11,7 @@ import { SvdFooterComponent } from './footer/svd-footer/svd-footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TrayDirComponent } from './tray-dir/tray-dir.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'under-construction'},
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true}
