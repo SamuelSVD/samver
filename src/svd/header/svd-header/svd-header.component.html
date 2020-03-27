@@ -2,7 +2,7 @@
   <div class="navbar navbar-block theme-color-box">
     <input type="checkbox" id="nav" [checked]="showMenu" (change)="showMenu = !showMenu" />
     <label class='float-right' for="nav">
-      <i class="icon fa fa-lg fa-bars"></i>
+      <i [className]="this.showMenu ? 'icon fa fa-lg fa-close' : 'icon fa fa-lg fa-bars'"></i>
     </label>
     <div class='navbar-flex float-left navbar-collapsible theme-color-box'>
       <a routerLink="/" class='navbar-main'>samver</a>

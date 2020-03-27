@@ -5,9 +5,9 @@
     width:100%;
 }
 .navbar {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     min-height: 49px;
 }
 .navbar a {
@@ -54,6 +54,12 @@ label {
     display: none;
 }
 @media screen and (max-width: 768px) {
+    .navbar {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        min-height: 49px;
+    }
     .navbar-main {
         margin-right: -100px;
     }
@@ -76,13 +82,25 @@ label {
         z-index: 9999;
         position: absolute;
         top: 48px;
-        left:10%;
-        width: 80%;
+        right:0%;
+        width: 100%;
         vertical-align: middle;
     }
     [type="checkbox"]:checked ~ label {
         background: #ababab;
         color: white;
+    }
+    [type="checkbox"] ~ label > .fa-bars {
+        visibility: visible;
+    }
+    [type="checkbox"]:checked ~ label > .fa-bars {
+        visibility: hidden;
+    }
+    [type="checkbox"] ~ label > .fa-close {
+        visibility: hidden;
+    }
+    [type="checkbox"]:checked ~ label > .fa-close {
+        visibility: visible;
     }
     .navbar-collapsible > ul {
         display: none;
@@ -93,9 +111,13 @@ label {
     .navbar-collapsible > ul > li{
         width:100%;
     }
+    .navbar-collapsible > ul > a {
+        border-top: dashed;
+        border-color: #3f3f3f;
+    }
     .navbar-collapsible ul > li > a{
         padding-left:10%;
-        width:80%;
-        padding-right:10%;
+        width:90%;
+        padding-right:0%;
     }
 }
