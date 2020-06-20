@@ -1,123 +1,125 @@
 .border-2px {
-    border: solid 1px;
+  border: solid 1px;
 }
 .navbar-border {
-    width:100%;
+  width: 100%;
 }
 .navbar {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    min-height: 49px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  min-height: 49px;
 }
 .navbar a {
-    color: #bfbfbf;
+  color: #bfbfbf;
 }
-.navbar a:link, a:visited {
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
+.navbar a:link,
+a:visited {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.navbar a:hover, a:active {
-    color: #cfcfcf;
-    background: #444a50;
+.navbar a:hover,
+a:active {
+  color: #cfcfcf;
+  background: #444a50;
 }
 .navbar-flex {
-    display: flex;
-    border-color: blue;
+  display: flex;
+  border-color: blue;
 }
 .navbar-block {
-    display: block;
-    border-color: blue;
+  display: block;
+  border-color: blue;
 }
 
 .navbar-flex-right {
-    display: flex;
-    border-color: green;
-    flex-flow: row-reverse wrap;
+  display: flex;
+  border-color: green;
+  flex-flow: row-reverse wrap;
 }
 
 .navbar-main {
-    font-weight: bold;
+  font-weight: bold;
 }
 .navbar ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .navbar [type="checkbox"] {
-    display: none;
+  display: none;
 }
 label {
-    display: none;
+  display: none;
 }
 @media screen and (max-width: 768px) {
-    .navbar {
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 100%;
-        min-height: 49px;
-    }
-    .navbar-main {
-        margin-right: -100px;
-    }
-    .navbar-hide {
-        display: none;
-    }
-    .navbar label {
-        display: block;
-        padding: 15px 20px;
-        cursor: pointer;
-    }
-    .navbar label:hover {
-        background: #444a50;
-    }
-    .navbar-flex-right {
-        border-color: purple;
-    }
-    [type="checkbox"]:checked ~ .navbar-collapsible > ul {
-        display: flex;
-        z-index: 9999;
-        position: absolute;
-        top: 48px;
-        right:0%;
-        width: 100%;
-        vertical-align: middle;
-    }
-    [type="checkbox"]:checked ~ label {
-        background: #ababab;
-        color: white;
-    }
-    [type="checkbox"] ~ label > .fa-bars {
-        visibility: visible;
-    }
-    [type="checkbox"]:checked ~ label > .fa-bars {
-        visibility: hidden;
-    }
-    [type="checkbox"] ~ label > .fa-close {
-        visibility: hidden;
-    }
-    [type="checkbox"]:checked ~ label > .fa-close {
-        visibility: visible;
-    }
-    .navbar-collapsible > ul {
-        display: none;
-    }
-    .navbar-collapsible > ul {
-        flex-direction: column;
-    }
-    .navbar-collapsible > ul > li{
-        width:100%;
-    }
-    .navbar-collapsible > ul > a {
-        border-top: dashed;
-        border-color: #3f3f3f;
-    }
-    .navbar-collapsible ul > li > a{
-        padding-left:10%;
-        width:90%;
-        padding-right:0%;
-    }
+  .navbar {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    min-height: 49px;
+  }
+  .navbar-main {
+    margin-right: -100px;
+  }
+  .navbar-hide {
+    display: none;
+  }
+  .navbar label {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+  .navbar label:hover {
+    background: #444a50;
+  }
+  .navbar-flex-right {
+    border-color: purple;
+  }
+  [type="checkbox"]:checked ~ .navbar-collapsible > ul {
+    display: flex;
+    z-index: 9999;
+    position: absolute;
+    top: 48px;
+    right: 0%;
+    width: 100%;
+    vertical-align: middle;
+  }
+  [type="checkbox"]:checked ~ label {
+    background: #ababab;
+    color: white;
+  }
+  [type="checkbox"] ~ label > .fa-bars {
+    visibility: visible;
+  }
+  [type="checkbox"]:checked ~ label > .fa-bars {
+    visibility: hidden;
+  }
+  [type="checkbox"] ~ label > .fa-close {
+    visibility: hidden;
+  }
+  [type="checkbox"]:checked ~ label > .fa-close {
+    visibility: visible;
+  }
+  .navbar-collapsible > ul {
+    display: none;
+  }
+  .navbar-collapsible > ul {
+    flex-direction: column;
+  }
+  .navbar-collapsible > ul > li {
+    width: 100%;
+  }
+  .navbar-collapsible > ul > a {
+    border-top: dashed;
+    border-color: #3f3f3f;
+  }
+  .navbar-collapsible ul > li > a {
+    padding-left: 10%;
+    width: 90%;
+    padding-right: 0%;
+  }
 }

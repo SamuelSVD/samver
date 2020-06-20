@@ -1,11 +1,26 @@
 .hero-text {
-    padding: 10px 40px;
-    margin: 40px;
-    text-align: center;
-    top: 30%;
-    left: 60%;
-    color: #444a50;
-    background: white;
-    border: solid;
-    border-radius: 5px;
+  padding: 10px 40px;
+  margin: 40px;
+  text-align: center;
+  top: 30%;
+  left: 60%;
+  color: #444a50;
+  background: white;
+  border: solid;
+  border-radius: 10px;
+}
+
+.medium {
+  max-width: 50vw;
+}
+.small {
+  max-width: 10vw;
+}
+@media screen and (max-width: 768px) {
+  .medium {
+    max-width: 60vw;
+  }
+  .small {
+    max-width: 20vw;
+  }
 }
