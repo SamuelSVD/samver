@@ -11,10 +11,11 @@ import { SvdFooterComponent } from './footer/svd-footer/svd-footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TrayDirComponent } from './tray-dir/tray-dir.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component'; 
 
 const appRoutes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'under-construction'},
+  { path: '', pathMatch: 'full', component: HomeComponent},//redirectTo: 'under-construction'},
   { path: 'under-construction', component: SvdUnderConstructionComponent},
   { path: 'about', component: AboutMeComponent},
   { path: 'TrayDir', component: TrayDirComponent},
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     SvdFooterComponent,
     AboutMeComponent,
     TrayDirComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
