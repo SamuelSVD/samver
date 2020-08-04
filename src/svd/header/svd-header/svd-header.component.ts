@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'svd-header',
@@ -7,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvdHeaderComponent implements OnInit {
 
+  menuitems;
   public showMenu: boolean = false;
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.httpClient.get("assets/data/Navbar.json").subscribe(data => {
+      console.log(data);
+      this.menuitems = (data as any).menuitems;
+    })
   }
 
   closeMenu() {

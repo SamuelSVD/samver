@@ -1,0 +1,13 @@
+.galleryItem {
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border:solid;
+    border-color: lightgray;
+    border-width: 1px;
+    margin: 5px;
+}
+img {
+    width:100%;
+}

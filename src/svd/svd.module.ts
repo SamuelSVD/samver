@@ -14,11 +14,22 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component'; 
 
+import { UrlSerializer,DefaultUrlSerializer, UrlTree } from '@angular/router';
+import { ArtComponent } from './art/art.component';
+import { GalleryCellComponent } from './gallery-cell/gallery-cell.component';
+
+export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
+    parse(url: string): UrlTree {
+        return super.parse(url.toLowerCase()); 
+    }
+}
+
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent},//redirectTo: 'under-construction'},
   { path: 'under-construction', component: SvdUnderConstructionComponent},
   { path: 'about', component: AboutMeComponent},
-  { path: 'TrayDir', component: TrayDirComponent},
+  { path: 'traydir', component: TrayDirComponent},
+  { path: 'art', component: ArtComponent},
   { path: '**', component: NotFoundComponent}
 ]
 @NgModule({
@@ -32,7 +43,9 @@ const appRoutes: Routes = [
     AboutMeComponent,
     TrayDirComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    ArtComponent,
+    GalleryCellComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +55,11 @@ const appRoutes: Routes = [
       { enableTracing: true}
     )
   ],
-  providers: [],
+  providers: [
+    {
+    provide: UrlSerializer,
+    useClass: LowerCaseUrlSerializer
+}],
   bootstrap: [SvdComponent]
 })
 export class SvdModule { }

@@ -7,14 +7,8 @@
     <div class='navbar-flex float-left navbar-collapsible theme-color-box'>
       <a routerLink="/" class='navbar-main'>samver</a>
       <ul class="theme-color-box">
-        <a routerLink="/" (click)='closeMenu()'>
-          <li>Home</li>
-        </a>
-        <a routerLink="/about" (click)='closeMenu()'>
-          <li>About</li>
-        </a>
-        <a routerLink="/TrayDir" (click)='closeMenu()'>
-          <li>TrayDir</li>
+        <a *ngFor="let menuitem of menuitems" routerLink={{menuitem.link}} (click)='closeMenu()'>
+          <li>{{menuitem.name}}</li>
         </a>
       </ul>
     </div>

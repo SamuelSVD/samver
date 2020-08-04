@@ -1,0 +1,24 @@
+{
+	"menuitems": [
+		{
+			"name": "Home",
+			"link": "/",
+			"menuitems": []
+		},
+		{
+			"name": "About",
+			"link": "/about",
+			"menuitems": []
+		},
+		{
+			"name": "TrayDir",
+			"link": "/traydir",
+			"menuitems": []
+		},
+		{
+			"name": "Art",
+			"link": "/art",
+			"menuitems": []
+		}
+	]
+}
