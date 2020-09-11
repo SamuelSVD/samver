@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { UrlSerializer,DefaultUrlSerializer, UrlTree } from '@angular/router';
 import { ArtComponent } from './art/art.component';
 import { GalleryCellComponent } from './gallery-cell/gallery-cell.component';
+import { NppePrepComponent } from './nppe-prep/nppe-prep.component';
 
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
     parse(url: string): UrlTree {
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutMeComponent},
   { path: 'traydir', component: TrayDirComponent},
   { path: 'art', component: ArtComponent},
+  { path: 'nppe', component: NppePrepComponent},
   { path: '**', component: NotFoundComponent}
 ]
 @NgModule({
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     NotFoundComponent,
     HomeComponent,
     ArtComponent,
-    GalleryCellComponent
+    GalleryCellComponent,
+    NppePrepComponent
   ],
   imports: [
     BrowserModule,
