@@ -25,5 +25,8 @@ body {
 }
 .theme-color-box {
     background: #343a40;
-    color: #bfbfbf;
+    color: #dfdfdf;
+}
+.theme-color-box-hover:hover {
+    background: #444a50;    
 }

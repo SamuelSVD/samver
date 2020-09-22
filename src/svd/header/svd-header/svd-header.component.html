@@ -1,13 +1,13 @@
 <div class="navbar-border theme-color-box">
   <div class="navbar navbar-block theme-color-box">
     <input type="checkbox" id="nav" [checked]="showMenu" (change)="showMenu = !showMenu" />
-    <label class='float-right' for="nav">
+    <label class='float-right theme-color-box theme-color-box-hover' for="nav">
       <i [className]="this.showMenu ? 'icon fa fa-lg fa-close' : 'icon fa fa-lg fa-bars'"></i>
     </label>
     <div class='navbar-flex float-left navbar-collapsible theme-color-box'>
       <a routerLink="/" class='navbar-main'>samver</a>
       <ul class="theme-color-box">
-        <a *ngFor="let menuitem of menuitems" routerLink={{menuitem.link}} (click)='closeMenu()'>
+        <a *ngFor="let menuitem of menuitems" class='theme-color-box-hover' routerLink={{menuitem.link}} (click)='closeMenu()'>
           <li>{{menuitem.name}}</li>
         </a>
       </ul>

@@ -20,11 +20,6 @@ a:visited {
   text-decoration: none;
 }
 
-.navbar a:hover,
-a:active {
-  color: #cfcfcf;
-  background: #444a50;
-}
 .navbar-flex {
   display: flex;
   border-color: blue;
@@ -72,9 +67,6 @@ label {
     display: block;
     padding: 15px 20px;
     cursor: pointer;
-  }
-  .navbar label:hover {
-    background: #444a50;
   }
   .navbar-flex-right {
     border-color: purple;

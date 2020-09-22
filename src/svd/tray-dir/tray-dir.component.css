@@ -1,11 +1,41 @@
 .download-group {
+  display: flex;
+  border-radius: 15px;
+  border: 2px solid #afafaf;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  background: #dfdfdf;
+  width: 95%;
+  height: 100px;
+}
+.button {
+  border: none;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.flex {
     display:flex;
-    border-radius: 15px;
-    border: 2px solid #afafaf;
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-    padding-left: 5%; 
-    background: #dfdfdf;
-    width: 95%;
-    height: 100px;
+}
+.header {
+    font-size:32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:10px;
+    font-weight: bold;
+}
+.version {
+    margin-left: 10px;
+}
+.example-image {
+  min-width: 50%;
+  max-width: 700px
 }

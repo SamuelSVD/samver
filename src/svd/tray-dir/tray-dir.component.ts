@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TrayDirComponent implements OnInit {
   VersionInfo = {'Version':'','URL':''};
+  Program = { 'ProgramName':'TrayDir',
+              'ShortDescription': 'TrayDir is a program intended for Windows use. Its main use is for situations where you would like quick access to a file on your drive without needing to open file explorer. You can esilty open a folder or run a file straight from the system tray. Small tasks like running cleanup scripts, running executables, or changing ip settings will be easily accessible right from the tray. This little tool will work as a shortcut to whatever you like!'};
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
