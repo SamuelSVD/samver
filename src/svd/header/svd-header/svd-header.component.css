@@ -10,9 +10,6 @@
   width: 90%;
   min-height: 49px;
 }
-.navbar a {
-  color: #bfbfbf;
-}
 .navbar a:link,
 a:visited {
   padding: 14px 25px;

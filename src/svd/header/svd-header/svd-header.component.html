@@ -5,9 +5,9 @@
       <i [className]="this.showMenu ? 'icon fa fa-lg fa-close' : 'icon fa fa-lg fa-bars'"></i>
     </label>
     <div class='navbar-flex float-left navbar-collapsible theme-color-box'>
-      <a routerLink="/" class='navbar-main'>samver</a>
-      <ul class="theme-color-box">
-        <a *ngFor="let menuitem of menuitems" class='theme-color-box-hover' routerLink={{menuitem.link}} (click)='closeMenu()'>
+      <a routerLink="/" class='navbar-main theme-color-box theme-color-box-hover'>samver</a>
+      <ul class="">
+        <a *ngFor="let menuitem of menuitems" class='theme-color-box theme-color-box-hover' routerLink={{menuitem.link}} (click)='closeMenu()'>
           <li>{{menuitem.name}}</li>
         </a>
       </ul>

@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~font-awesome/css/font-awesome.css';
 
+/* Theme coloring */
+.theme-color-box {
+    background: #787894;
+    background: #5d6483;
+    color: white;
+}
+.theme-color-box-hover:hover {
+    background: #7D606E;
+    transition-duration: 0.3s;
+}
+.theme-color-bg {
+    background: white;
+    color: black;
+}
+
+/**/
 body {
     margin: 0px;
 }
@@ -23,10 +39,14 @@ body {
 .float-left {
     float: left;
 }
-.theme-color-box {
-    background: #343a40;
-    color: #dfdfdf;
-}
-.theme-color-box-hover:hover {
-    background: #444a50;    
-}
+.button {
+    border: none;
+    padding: 14px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
