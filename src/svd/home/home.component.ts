@@ -21,8 +21,10 @@ export class HomeComponent implements OnInit {
     console.log('lol');
     this.styleService.setStyle(".theme-color-bg", "background", this.randomColorString());
     this.styleService.setStyle(".theme-color-bg", "color", this.randomColorString());
-    this.styleService.setStyle(".theme-color-box", "background", this.randomColorString());
+    var colour = this.randomColorString();
+    this.styleService.setStyle(".theme-color-box", "background", colour);
     this.styleService.setStyle(".theme-color-box", "color", this.randomColorString());
+    this.styleService.setStyle(".theme-color-fill", "fill", colour);
     this.styleService.setStyle(".theme-color-box-hover:hover", "background", this.randomColorString());
   }
   randomColorString() {

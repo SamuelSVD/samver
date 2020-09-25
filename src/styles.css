@@ -3,7 +3,6 @@
 
 /* Theme coloring */
 .theme-color-box {
-    background: #787894;
     background: #5d6483;
     color: white;
 }
@@ -14,6 +13,9 @@
 .theme-color-bg {
     background: white;
     color: black;
+}
+.theme-color-fill {
+    fill: #5d6483;
 }
 
 /**/
