@@ -15,7 +15,6 @@ export class SvdHeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.httpClient.get("assets/data/navbar.json").subscribe(data => {
-      console.log(data);
       this.menuitems = (data as any).menuitems;
     })
   }

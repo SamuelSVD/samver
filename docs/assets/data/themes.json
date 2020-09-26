@@ -1,0 +1,48 @@
+{
+  "themes": [
+    {
+      "name": "light",
+      "styles": [
+        { "selectorText": ".theme-color-bg", "styleName": "background", "value": "white" },
+        { "selectorText": ".theme-color-bg", "styleName": "color", "value": "black" },
+        { "selectorText": ".theme-color-box", "styleName": "background", "value": "#5d6483" },
+        { "selectorText": ".theme-color-box", "styleName": "color", "value": "white" },
+        { "selectorText": ".theme-color-fill", "styleName": "fill", "value": "#5d6483" },
+        { "selectorText": ".theme-color-box-hover:hover", "styleName": "background", "value": "#7D606E" }
+      ]
+    },
+    {
+      "name": "dark-green",
+      "styles": [
+        { "selectorText": ".theme-color-bg", "styleName": "background", "value": "rgb(15,107,184)" },
+        { "selectorText": ".theme-color-bg", "styleName": "color", "value": "rgb(30,206,195)" },
+        { "selectorText": ".theme-color-box", "styleName": "background", "value": "rgb(40,47,16)" },
+        { "selectorText": ".theme-color-box", "styleName": "color", "value": "rgb(197,240,37)" },
+        { "selectorText": ".theme-color-fill", "styleName": "fill", "value": "rgb(40,47,16)" },
+        { "selectorText": ".theme-color-box-hover:hover", "styleName": "background", "value": "rgb(100,133,26)" }
+      ]
+    },
+    {
+      "name": "green",
+      "styles": [
+        { "selectorText": ".theme-color-bg", "styleName": "background", "value": "rgb(50,82,79)" },
+        { "selectorText": ".theme-color-bg", "styleName": "color", "value": "rgb(167,179,175)" },
+        { "selectorText": ".theme-color-box", "styleName": "background", "value": "rgb(20,140,120)" },
+        { "selectorText": ".theme-color-box", "styleName": "color", "value": "rgb(30,70,30)" },
+        { "selectorText": ".theme-color-fill", "styleName": "fill", "value": "rgb(108,173,139)" },
+        { "selectorText": ".theme-color-box-hover:hover", "styleName": "background", "value": "rgb(100,133,26)" }
+      ]
+    },
+    {
+      "name": "blue",
+      "styles": [
+        { "selectorText": ".theme-color-bg", "styleName": "background", "value": "rgb(0,58,103)" },
+        { "selectorText": ".theme-color-bg", "styleName": "color", "value": "rgb(0,133,235)" },
+        { "selectorText": ".theme-color-box", "styleName": "background", "value": "rgb(0,94,166)" },
+        { "selectorText": ".theme-color-box", "styleName": "color", "value": "rgb(12,147,251)" },
+        { "selectorText": ".theme-color-fill", "styleName": "fill", "value": "rgb(0,94,166)" },
+        { "selectorText": ".theme-color-box-hover:hover", "styleName": "background", "value": "rgb(0,133,235)" }
+      ]
+    }
+  ]
+}
