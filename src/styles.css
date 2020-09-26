@@ -1,54 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~font-awesome/css/font-awesome.css';
+@import "~font-awesome/css/font-awesome.css";
 
 /* Theme coloring */
 .theme-color-box {
-    background: #5d6483;
-    color: white;
+  background: #5d6483;
+  color: white;
 }
 .theme-color-box-hover:hover {
-    background: #7D606E;
-    transition-duration: 0.3s;
+  background: #7d606e;
+  transition-duration: 0.3s;
 }
 .theme-color-bg {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 .theme-color-fill {
-    fill: #5d6483;
+  fill: #5d6483;
 }
 
 /**/
 body {
-    margin: 0px;
+  margin: 0px;
 }
 .svd-content-container {
-    padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 .align-middle {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 .float-right {
-    float: right;
+  float: right;
 }
 .float-left {
-    float: left;
+  float: left;
 }
 .button {
-    border: none;
-    padding: 14px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
+  border: none;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}

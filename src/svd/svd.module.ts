@@ -19,6 +19,8 @@ import { UrlSerializer, DefaultUrlSerializer, UrlTree } from '@angular/router';
 import { ArtComponent } from './components/pages/art/art.component';
 import { GalleryCellComponent } from './components/gallery-cell/gallery-cell.component';
 import { NppePrepComponent } from './components/pages/nppe-prep/nppe-prep.component';
+import { DropdownComponent } from './components/input/dropdown/dropdown.component';
+import { TextboxComponent } from './components/input/textbox/textbox.component';
 
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
   parse(url: string): UrlTree {
@@ -48,7 +50,9 @@ const appRoutes: Routes = [
     HomeComponent,
     ArtComponent,
     GalleryCellComponent,
-    NppePrepComponent
+    NppePrepComponent,
+    DropdownComponent,
+    TextboxComponent
   ],
   imports: [
     BrowserModule,
