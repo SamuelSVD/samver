@@ -13,7 +13,6 @@ export class ArtComponent implements OnInit {
 
   ngOnInit(): void {
     this.httpClient.get("assets/data/gallery.json").subscribe(data => {
-      console.log(data);
       this.galleryItems = this.shuffleArray((data as any).galleryitems);
     })
   }

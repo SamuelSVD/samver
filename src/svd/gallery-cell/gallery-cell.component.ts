@@ -20,7 +20,6 @@ export class GalleryCellComponent implements OnInit {
   }
 
   public setStyle() {
-    console.log("is this running???")
     this.color = '#';
     var letters = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
     for (var i = 0; i < 6; i++) {
