@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SocialMediaList } from '../../class/social-media/social-media-list';
+import { SocialMediaList } from '../../../class/social-media/social-media-list';
 
 @Component({
   selector: 'svd-social-media-header',

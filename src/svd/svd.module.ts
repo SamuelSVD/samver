@@ -1,25 +1,24 @@
-import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StyleService } from './services/style-service/style.service';
 
 import { SvdComponent } from './svd.component';
-import { SvdHeaderComponent } from './header/svd-header/svd-header.component';
-import { SvdContentComponent } from './svd-content/svd-content.component';
-import { SvdUnderConstructionComponent } from './svd-under-construction/svd-under-construction.component';
-import { SvdSocialMediaHeaderComponent } from './header/svd-social-media-header/svd-social-media-header.component';
-import { SvdFooterComponent } from './footer/svd-footer/svd-footer.component';
+import { SvdHeaderComponent } from './components/header/svd-header/svd-header.component';
+import { SvdUnderConstructionComponent } from './components/pages/svd-under-construction/svd-under-construction.component';
+import { SvdSocialMediaHeaderComponent } from './components/header/svd-social-media-header/svd-social-media-header.component';
+import { SvdFooterComponent } from './components/footer/svd-footer/svd-footer.component';
 import { RouterModule, Routes } from '@angular/router';
-import { TrayDirComponent } from './tray-dir/tray-dir.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { TrayDirComponent } from './components/pages/tray-dir/tray-dir.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 import { UrlSerializer, DefaultUrlSerializer, UrlTree } from '@angular/router';
-import { ArtComponent } from './art/art.component';
-import { GalleryCellComponent } from './gallery-cell/gallery-cell.component';
-import { NppePrepComponent } from './nppe-prep/nppe-prep.component';
+import { ArtComponent } from './components/pages/art/art.component';
+import { GalleryCellComponent } from './components/gallery-cell/gallery-cell.component';
+import { NppePrepComponent } from './components/pages/nppe-prep/nppe-prep.component';
 
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
   parse(url: string): UrlTree {
@@ -40,7 +39,6 @@ const appRoutes: Routes = [
   declarations: [
     SvdComponent,
     SvdHeaderComponent,
-    SvdContentComponent,
     SvdUnderConstructionComponent,
     SvdSocialMediaHeaderComponent,
     SvdFooterComponent,
