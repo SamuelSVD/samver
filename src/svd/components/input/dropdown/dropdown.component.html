@@ -1,6 +1,13 @@
-<div class="flex button">
-  <div style="background: red">Select...</div>
-  <div style="background: blue">
-    <i class="icon fa fa-angle-down"></i>
+<div class='dropdown'>
+  <div class="flex button" (click)='fun()'>
+    <div>Select...</div>
+    <div>
+      <i class="icon fa" [ngClass]="{'fa-angle-down': !this.clicked, 'fa-angle-up': this.clicked}"></i>
+    </div>
+  </div>
+  <div class="dropdown-content" [ngClass]="{'show': this.clicked }">
+    <a href="">This Is Item1</a>
+    <a href="">This Is Item2</a>
+    <a href="">This Is Item3</a>
   </div>
 </div>
