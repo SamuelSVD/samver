@@ -12,5 +12,6 @@
     margin-left: 10px;
 }
 .example-image {
-  width: 70%;
+    min-width: 100px;
+    max-width: 500px;
 }

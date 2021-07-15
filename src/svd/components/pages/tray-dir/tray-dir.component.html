@@ -1,57 +1,62 @@
 <div class='flex'>
-  <img src="assets/img/TrayDir.png" style="width: 60px;"/>
+  <img src="assets/img/TrayDir.png" style="width: 60px;" />
   <span class='header'>{{ Program.ProgramName }}</span>
 </div>
-<br/>
+<br />
 <p>{{ Program.ShortDescription }}</p>
 <p></p>
 <hr />
 <a class="button theme-color-box theme-color-box-hover" href="{{ VersionInfo.URL }}" download>
   <i class='icon fa fa-windows'></i>
-  <span class='version'>Download v{{ VersionInfo.Version }}</span>
+  <span class='version'>Download {{ VersionInfo.Version }}</span>
+</a>
+<a class="button theme-color-box theme-color-box-hover" href="https://github.com/SamuelSVD/TrayDir" download>
+  <i class='icon fa fa-github'></i>
+  <span class='version'>See project on GitHub</span>
 </a>
 <hr />
+<h2>How To Use</h2>
+<p>
+  When you first start up TrayDir, you will be greeted with the form containing one instance, New Instance. Each
+  instance will have its own icon in the system tray. Each instance can be configured to have multiple items inside
+  which work as shortcuts to different file or folder locations... That was a mouthful
+</p>
+<p>
+  However you decite to configure the items in the main window is how the tray menu will look when you right click,
+  meaning you can have custom shortcuts in whatever structure you want! This might be easier to understand with an
+  example
+</p>
+
+<h3>Adding New Items</h3>
+<p>You can add new items by making use of the top buttons. You can add a new file link, new folder link, or new virtual folder to the tree of items.</p>
+<figure>
+<img src='https://user-images.githubusercontent.com/36249705/124690601-72649b00-dea8-11eb-81f7-2de9e0b47c08.png'/>
+<figcaption>The Interaction Menu</figcaption>
+</figure>
+<h3>Creating New Instances</h3>
+You can create a new instance by clicking on the + tab, or by clicking on Instance | New from the menu bar
 <h3>Example</h3>
 <p>
-  Let's say I have a folder that I use for running all sorts of scripts. Some
-  related to changing my IP, some related to web development, and another that I
-  use for fun.
+  Below we have an example of an instance called New Instance. It has a file link, a folder link, and a virtual folder
+  with two file links inside.
 </p>
-<div class="align-center">
-  <img
-    src="assets/img/TrayDir_example_01.png"
-    class="example-image"
-  />
-  <p>Figure 1: Folder Structure</p>
-</div>
+<figure class="align-left">
+  <img src="https://user-images.githubusercontent.com/36249705/124690456-392c2b00-dea8-11eb-9511-393a1566618e.png"
+    class="example-image" />
+  <figcaption>Example Folder Structure</figcaption>
+</figure>
 <p>
-  I want easy access to this folder to be able to run different programs. This
-  sort of thing happens in everyday dev work.
+  The right-click tray menu appears in the same order as the tree view above, and when you hover over the tray icon, it
+  shows the instance name "New Instance"
 </p>
-<p>
-  All you have to do is run the program, point it to the folder you would like
-  access to, and TADA! The folder will be easily accessible from your system
-  tray.
-</p>
-<div class="align-center">
-  <img
-    src="assets/img/TrayDir_example_05.png"
-    class="example-image"
-  />
-  <p>Figure 2: Program Setup</p>
-</div>
-<div class="align-center">
-  <img
-    src="assets/img/TrayDir_example_02.png"
-    class="example-image"
-  />
-  <p>Figure 3: Tray Icon</p>
-</div>
-<div class="align-center">
-  <img
-    src="assets/img/TrayDir_example_03.png"
-    class="example-image"
-  />
-  <p>Figure 4: Popup Menu</p>
-</div>
+<figure>
+  <img src="https://user-images.githubusercontent.com/36249705/124690464-3b8e8500-dea8-11eb-8183-6bf2798ce7ed.png"
+    class="example-image" />
+  <figcaption>Example Tray Menu</figcaption>
+</figure>
+<figure>
+  <img src="https://user-images.githubusercontent.com/36249705/124691926-a5a82980-deaa-11eb-9e1d-e484f65d80d2.png"
+    class="example-image" />
+  <figcaption>Instance Name & Tray Icon</figcaption>
+</figure>
 <p></p>

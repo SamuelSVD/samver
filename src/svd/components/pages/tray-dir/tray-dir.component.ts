@@ -8,13 +8,15 @@ import { HttpClient } from '@angular/common/http';
 export class TrayDirComponent implements OnInit {
   VersionInfo = {'Version':'','URL':''};
   Program = { 'ProgramName':'TrayDir',
-              'ShortDescription': 'TrayDir is a program intended for Windows use. Its main use is for situations where you would like quick access to a file on your drive without needing to open file explorer. You can esilty open a folder or run a file straight from the system tray. Small tasks like running cleanup scripts, running executables, or changing ip settings will be easily accessible right from the tray. This little tool will work as a shortcut to whatever you like!'};
+              'ShortDescription': 'TrayDir is a program intended for Windows 10 use. Its main function is to provide easy access to files, folders, programs, or scripts directly from the system tray. With TrayDir you can quickly open a folder click on a shortcut, or run a script straight from the system tray. This little tool can work as a shortcut to anything!'};
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get("assets/data/TrayDir.json").subscribe(data => {
+    this.httpClient.get("https://api.github.com/repos/SamuelSVD/TrayDir/releases/latest").subscribe(data => {
       console.log(data);
-      this.VersionInfo = (data as any);
+      var git = data as any;
+      this.VersionInfo.Version = git.tag_name;
+      this.VersionInfo.URL = git.assets[0].browser_download_url;
     })
   }
 

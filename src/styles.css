@@ -22,6 +22,9 @@
 body {
   margin: 0px;
 }
+a {
+  text-decoration: none;
+}
 .svd-content-container {
   padding-top: 5vh;
   padding-left: 5vw;
