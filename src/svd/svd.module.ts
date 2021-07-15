@@ -38,7 +38,6 @@ const appRoutes: Routes = [
   { path: 'nppe', component: NppePrepComponent },
   { path: '**', component: NotFoundComponent }
 ]
-@Directive()
 @NgModule({
   declarations: [
     SvdComponent,
