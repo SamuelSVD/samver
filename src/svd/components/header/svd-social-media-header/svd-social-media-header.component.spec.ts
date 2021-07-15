@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SvdSocialMediaHeaderComponent } from './svd-social-media-header.component';
 
@@ -6,7 +6,7 @@ describe('SvdSocialMediaHeaderComponent', () => {
   let component: SvdSocialMediaHeaderComponent;
   let fixture: ComponentFixture<SvdSocialMediaHeaderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SvdSocialMediaHeaderComponent ]
     })

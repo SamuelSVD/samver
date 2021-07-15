@@ -1,5 +1,5 @@
 .flex {
-    display:flex;
+    display:inline-flex;
 }
 .header {
     font-size:32px;

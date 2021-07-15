@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SvdHeaderComponent } from './svd-header.component';
 
@@ -6,7 +6,7 @@ describe('SvdHeaderComponent', () => {
   let component: SvdHeaderComponent;
   let fixture: ComponentFixture<SvdHeaderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SvdHeaderComponent ]
     })

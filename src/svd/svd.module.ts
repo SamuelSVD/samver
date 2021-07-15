@@ -1,6 +1,6 @@
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Injectable, Directive } from '@angular/core';
 import { StyleService } from './services/style-service/style.service';
 
 import { SvdComponent } from './svd.component';
@@ -22,6 +22,7 @@ import { NppePrepComponent } from './components/pages/nppe-prep/nppe-prep.compon
 import { DropdownComponent } from './components/input/dropdown/dropdown.component';
 import { TextboxComponent } from './components/input/textbox/textbox.component';
 
+@Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
   parse(url: string): UrlTree {
     return super.parse(url.toLowerCase());
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'nppe', component: NppePrepComponent },
   { path: '**', component: NotFoundComponent }
 ]
+@Directive()
 @NgModule({
   declarations: [
     SvdComponent,
@@ -59,7 +61,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
+      { enableTracing: true, relativeLinkResolution: 'legacy' }
     )
   ],
   providers: [

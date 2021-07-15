@@ -27,6 +27,7 @@ export class Style {
     public styleName: string,
     public value: string) { }
 }
+@Injectable()
 export class StyleService {
   private _activeTheme: Theme;
   private _themes: Theme[];
