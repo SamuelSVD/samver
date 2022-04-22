@@ -2,43 +2,43 @@
 	"galleryitems": [
 		{
 			"alt": "basketball-1",
-			"href": "https://drive.google.com/uc?export=view&id=1OjkFE_Eaf6x08PU0twbLG8OT1Mdk3x8j"
+			"href": "/assets/img/gallery/basketball-1.png"
 		},
 		{
 			"alt": "basketball-2",
-			"href": "https://drive.google.com/uc?export=view&id=1miFjiz3ozlAvRjJV8V-DbYQqExzplqXu"
+			"href": "/assets/img/gallery/basketball-2.png"
 		},
 		{
 			"alt": "blue-yeti-1",
-			"href": "https://drive.google.com/uc?export=view&id=10yp1socMuRUl-v5D2Dy3zWWSmCYqhb_I"
+			"href": "/assets/img/gallery/blue-yeti-1.png"
 		},
 		{
 			"alt": "blue-yeti-2",
-			"href": "https://drive.google.com/uc?export=view&id=1Lpz-_KVIIBoh4nHunciCvHZyS3wPMPCG"
+			"href": "/assets/img/gallery/blue-yeti-2.png"
 		},
 		{
 			"alt": "books",
-			"href": "https://drive.google.com/uc?export=view&id=1K4cRd4e5QXhU4VEX2kFkUWdtOzZymSsy"
+			"href": "/assets/img/gallery/books.png"
 		},
 		{
 			"alt": "guitar",
-			"href": "https://drive.google.com/uc?export=view&id=10Q0xDAHRAbrlfCyrS0uZlIaq374IWmsB"
+			"href": "/assets/img/gallery/guitar.png"
 		},
 		{
 			"alt": "samver",
-			"href": "https://drive.google.com/uc?export=view&id=1g6ufjG5l0rwDQrEe3rl-FpzqsIYP_eqY"
+			"href": "/assets/img/gallery/samver.png"
 		},
 		{
 			"alt": "watch-1",
-			"href": "https://drive.google.com/uc?export=view&id=1_3vmUY3TYAirHpre--uEgO_xyc8UTYhs"
+			"href": "/assets/img/gallery/watch-1.png"
 		},
 		{
 			"alt": "ukelele",
-			"href": "https://drive.google.com/uc?export=view&id=1dPa3Bfd8wkKOD7zaEVbsGDxypD4lLyLk"
+			"href": "/assets/img/gallery/ukelele.png"
 		},
 		{
 			"alt": "watch-2",
-			"href": "https://drive.google.com/uc?export=view&id=1q9ecDoMVqMkV9PqIj00YnH1zRs1TTKgN"
+			"href": "/assets/img/gallery/watch-2.png"
 		}
 	]
 }
