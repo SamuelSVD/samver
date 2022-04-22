@@ -59,3 +59,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+code {
+	border-radius: 5px;
+	padding: 3px 6px 3px 6px;
+	background-color: #D3D3D3;
+}
