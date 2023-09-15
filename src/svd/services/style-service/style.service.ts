@@ -114,6 +114,7 @@ export class StyleService {
   }
   public getRandomTheme(): Theme {
     var theme: Theme = new Theme('random');
+    console.log('random');
     theme.addNewStyle(".theme-color-bg", "background", this.randomColorString());
     theme.addNewStyle(".theme-color-bg", "color", this.randomColorString());
     var colour = this.randomColorString();
