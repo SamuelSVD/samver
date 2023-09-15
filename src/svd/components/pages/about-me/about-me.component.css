@@ -1,4 +1,5 @@
 .small-img {
     width: 30%;
-    margin-right:10px
+    margin-right:10px;
+    border-radius: 50%;
 }

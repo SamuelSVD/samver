@@ -21,6 +21,7 @@ import { GalleryCellComponent } from './components/gallery-cell/gallery-cell.com
 import { NppePrepComponent } from './components/pages/nppe-prep/nppe-prep.component';
 import { DropdownComponent } from './components/input/dropdown/dropdown.component';
 import { TextboxComponent } from './components/input/textbox/textbox.component';
+import { QuickDBAccessComponent } from './components/pages/quickdbaccess/quickdbaccess.component';
 
 @Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'under-construction', component: SvdUnderConstructionComponent },
   { path: 'about', component: AboutMeComponent },
   { path: 'traydir', component: TrayDirComponent },
+  { path: 'quickdbaccess', component: QuickDBAccessComponent },
   { path: 'art', component: ArtComponent },
   { path: 'nppe', component: NppePrepComponent },
   { path: '**', component: NotFoundComponent }
@@ -53,7 +55,8 @@ const appRoutes: Routes = [
     GalleryCellComponent,
     NppePrepComponent,
     DropdownComponent,
-    TextboxComponent
+    TextboxComponent,
+    QuickDBAccessComponent
   ],
   imports: [
     BrowserModule,

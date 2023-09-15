@@ -1,7 +1,7 @@
 .svd-container {
 	position: relative;
 	min-height: 100vh;
-	font-family:"Helvetica";
+	font-family: Arial, sans-serif;
 }
 .svd-content {
 	padding-bottom: 4.8rem;

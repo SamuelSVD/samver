@@ -1,11 +1,6 @@
 {
 	"menuitems": [
 		{
-			"name": "Home",
-			"link": "/",
-			"menuitems": []
-		},
-		{
 			"name": "About",
 			"link": "/about",
 			"menuitems": []
@@ -13,6 +8,11 @@
 		{
 			"name": "TrayDir",
 			"link": "/traydir",
+			"menuitems": []
+		},
+		{
+			"name": "Quick DB Access",
+			"link": "/quickdbaccess",
 			"menuitems": []
 		},
 		{
