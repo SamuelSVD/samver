@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://samver.ca/</loc>
+      <loc>https://samver.ca/</loc>
    </url>
    <url>
-      <loc>http://samver.ca/about</loc>
+      <loc>https://samver.ca/about</loc>
    </url>
    <url>
-      <loc>http://samver.ca/traydir</loc>
+      <loc>https://samver.ca/traydir</loc>
    </url>
    <url>
-      <loc>http://samver.ca/art</loc>
+      <loc>https://samver.ca/quickdbaccess</loc>
+   </url>
+   <url>
+      <loc>https://samver.ca/art</loc>
    </url>
 </urlset>
