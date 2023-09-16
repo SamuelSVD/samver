@@ -58,13 +58,10 @@ export class StyleService {
   public setStyle(selectorText: string, styleName: string, value: string): void {
     let rule: CSSStyleRule = this.getStyleRule(selectorText);
     if (!rule) return;
-    //rule.style[styleName] = value;
-    console.log('click');
     $(selectorText).css(styleName, value);
   }
   public setStyles(selectorText: string, styles: { [styleName: string]: string } | CSSStyleDeclaration) {
     let rule: CSSStyleRule = this.getStyleRule(selectorText);
-    console.log('click');
     if (!rule) return;
     Object.keys(styles).forEach(styleName => {
        //rule.style[styleName] = styles[styleName];
