@@ -65,3 +65,16 @@ code {
 	padding: 3px 6px 3px 6px;
 	background-color: #D3D3D3;
 }
+.flex-container {
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  max-width: 50rem;
+}
+.flex-container > .button {
+  flex: 1 0 10rem;
+}
+.example-image {
+  min-width: 100px;
+  max-width: 95%;
+}
