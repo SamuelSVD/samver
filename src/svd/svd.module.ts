@@ -63,7 +63,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true, relativeLinkResolution: 'legacy' }
+      { enableTracing: true }
     )
   ],
   providers: [
